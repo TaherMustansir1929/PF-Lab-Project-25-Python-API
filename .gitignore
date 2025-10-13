@@ -214,3 +214,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# DEBUG: remove uv files
+.python-version
+uv.lock
+pyproject.toml
