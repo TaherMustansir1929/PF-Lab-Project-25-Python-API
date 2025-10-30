@@ -11,7 +11,7 @@ class QuizStartRequest(BaseModel):
 
     course: str = Field(..., description="Course/subject name")
     topic: str = Field(..., description="Specific topic within the course")
-    user_id: Optional[str] = Field(None, description="Optional user identifier")
+    user_id: str = Field(..., description="User identifier")
     session_id: Optional[str] = Field(
         None, description="Optional session identifier if session exists"
     )
@@ -37,6 +37,7 @@ class AnswerSubmitRequest(BaseModel):
     """Request model to submit an answer"""
 
     session_id: str = Field(..., description="Quiz session identifier")
+    user_id: str = Field(..., description="User identifier")
     answer: Literal["A", "B", "C", "D"] = Field(
         ..., description="User's answer (A, B, C, or D)", pattern="^[A-Da-d]$"
     )
@@ -71,3 +72,15 @@ class ErrorResponse(BaseModel):
 
     error: str
     detail: Optional[str] = None
+
+
+class HealthCheckResponse(BaseModel):
+    """Health check response model"""
+
+    status: str = Field(..., description="Service status")
+    active_user_count: int = Field(..., description="Number of active users")
+    quiz_session_count: int = Field(..., description="Number of active quiz sessions")
+    quiz_session_ids: dict[str, list[str]] = Field(
+        ..., description="Mapping of user IDs to their active session IDs"
+    )
+    timestamp: str = Field(..., description="Timestamp of the health check")

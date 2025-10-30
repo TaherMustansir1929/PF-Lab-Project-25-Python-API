@@ -1,0 +1,538 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "HumanMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGoogleGenerativeAI",
+        "importPath": "langchain_google_genai",
+        "description": "langchain_google_genai",
+        "isExtraImport": true,
+        "detail": "langchain_google_genai",
+        "documentation": {}
+    },
+    {
+        "label": "ChatAnthropic",
+        "importPath": "langchain_anthropic",
+        "description": "langchain_anthropic",
+        "isExtraImport": true,
+        "detail": "langchain_anthropic",
+        "documentation": {}
+    },
+    {
+        "label": "ChatGroq",
+        "importPath": "langchain_groq",
+        "description": "langchain_groq",
+        "isExtraImport": true,
+        "detail": "langchain_groq",
+        "documentation": {}
+    },
+    {
+        "label": "MCQ_GENERATION_PROMPT",
+        "importPath": "prompts",
+        "description": "prompts",
+        "isExtraImport": true,
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "FEEDBACK_PROMPT",
+        "importPath": "prompts",
+        "description": "prompts",
+        "isExtraImport": true,
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "QuizState",
+        "importPath": "agent",
+        "description": "agent",
+        "isExtraImport": true,
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "generate_mcq_node",
+        "importPath": "agent",
+        "description": "agent",
+        "isExtraImport": true,
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "process_answer_node",
+        "importPath": "agent",
+        "description": "agent",
+        "isExtraImport": true,
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSubmitRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSubmitResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStartRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStartResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStatusResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "HealthCheckResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-ai-agent\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-ai-agent\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-ai-agent\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-ai-agent\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-ai-agent\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "QuizState",
+        "kind": 6,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "class QuizState(TypedDict):\n    \"\"\"Represents the state of the quiz session\"\"\"\n    course: str\n    topic: str\n    difficulty: int\n    current_mcq: str\n    options: dict[str, str]\n    user_answer: Literal[\"A\", \"B\", \"C\", \"D\"]\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"]\n    explanation: str",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "kind": 6,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "class Options(BaseModel):\n    A: str = Field(..., description=\"Option A text\")\n    B: str = Field(..., description=\"Option B text\")\n    C: str = Field(..., description=\"Option C text\")\n    D: str = Field(..., description=\"Option D text\")\nclass MCQ(BaseModel):\n    question: str = Field(..., description=\"Question text for the MCQ\")\n    options: Options = Field(..., description=\"The four answer options (A, B, C, D)\")\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"Correct option for your question. Either of [A, B, C, D]\"",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "MCQ",
+        "kind": 6,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "class MCQ(BaseModel):\n    question: str = Field(..., description=\"Question text for the MCQ\")\n    options: Options = Field(..., description=\"The four answer options (A, B, C, D)\")\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"Correct option for your question. Either of [A, B, C, D]\"\n    )\n    explanation: str = Field(\n        ...,\n        description=\"Brief explanation of why this is correct and why others are wrong (2-3 sentences)\",\n    )",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "generate_mcq_node",
+        "kind": 2,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [HumanMessage(content=prompt)]\n    chain = ChatPromptTemplate.from_messages(messages) | llm",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "process_answer_node",
+        "kind": 2,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "def process_answer_node(state: QuizState) -> QuizState:\n    # Normalize answers for comparison\n    user_ans = state[\"user_answer\"].strip().upper()\n    correct_ans = state[\"correct_answer\"].strip().upper()\n    is_correct = user_ans == correct_ans\n    # Update score and difficulty\n    new_score = state[\"score\"] + (1 if is_correct else 0)\n    new_total = state[\"total_questions\"] + 1\n    # Adaptive difficulty adjustment\n    new_difficulty = state[\"difficulty\"]",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "llm = ChatGroq(model=\"openai/gpt-oss-120b\")\n# llm = ChatAnthropic(model_name=\"claude-sonnet-4-5\", timeout=120, stop=None)\ndef generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = FastAPI(\n    title=\"Adaptive MCQ Quiz API\",\n    description=\"REST API for an adaptive multiple-choice quiz system using Langchain and Google Gemini\",\n    version=\"1.0.0\",\n)\n# CORS middleware for frontend integration\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Configure appropriately for production\n    allow_credentials=True,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStartRequest",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class QuizStartRequest(BaseModel):\n    \"\"\"Request model to start a new quiz session\"\"\"\n    course: str = Field(..., description=\"Course/subject name\")\n    topic: str = Field(..., description=\"Specific topic within the course\")\n    user_id: str = Field(..., description=\"User identifier\")\n    session_id: Optional[str] = Field(\n        None, description=\"Optional session identifier if session exists\"\n    )\n    initial_difficulty: int = Field(\n        2, ge=1, le=5, description=\"Starting difficulty level (1-5)\"",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStartResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class QuizStartResponse(BaseModel):\n    \"\"\"Response model for starting a quiz\"\"\"\n    session_id: str\n    course: str\n    topic: str\n    difficulty: int\n    question: str\n    options: dict[str, str]\n    question_number: int\n    message: str",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSubmitRequest",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class AnswerSubmitRequest(BaseModel):\n    \"\"\"Request model to submit an answer\"\"\"\n    session_id: str = Field(..., description=\"Quiz session identifier\")\n    user_id: str = Field(..., description=\"User identifier\")\n    answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"User's answer (A, B, C, or D)\", pattern=\"^[A-Da-d]$\"\n    )\nclass AnswerSubmitResponse(BaseModel):\n    \"\"\"Response model after submitting an answer\"\"\"\n    session_id: str",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSubmitResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class AnswerSubmitResponse(BaseModel):\n    \"\"\"Response model after submitting an answer\"\"\"\n    session_id: str\n    is_correct: bool\n    feedback: str\n    score: int\n    total_questions: int\n    new_difficulty: int\nclass QuizStatusResponse(BaseModel):\n    \"\"\"Response model for quiz session status\"\"\"",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizStatusResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class QuizStatusResponse(BaseModel):\n    \"\"\"Response model for quiz session status\"\"\"\n    session_id: str\n    course: str\n    topic: str\n    score: int\n    total_questions: int\n    difficulty: int\n    current_phase: str\n    created_at: str",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class ErrorResponse(BaseModel):\n    \"\"\"Error response model\"\"\"\n    error: str\n    detail: Optional[str] = None\nclass HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "HealthCheckResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(\n        ..., description=\"Mapping of user IDs to their active session IDs\"\n    )\n    timestamp: str = Field(..., description=\"Timestamp of the health check\")",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "MCQ_GENERATION_PROMPT",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "MCQ_GENERATION_PROMPT = \"\"\"You are an expert educational content creator specializing in generating high-quality, pedagogically sound multiple-choice questions.\nYour task is to create a single MCQ based on the following parameters:\n- Course: {course}\n- Topic: {topic}\n- Difficulty Level: {difficulty}/5 (where 1 is beginner and 5 is expert)\nDIFFICULTY GUIDELINES:\n- Level 1 (Beginner): Basic definitions, simple recall, fundamental concepts. Direct questions with obvious incorrect options.\n- Level 2 (Elementary): Understanding basic relationships, simple application of concepts. Some plausible distractors.\n- Level 3 (Intermediate): Application of knowledge, analysis of scenarios, connecting multiple concepts. Moderately challenging distractors.\n- Level 4 (Advanced): Complex problem-solving, evaluation, synthesis of multiple concepts. Subtle differences between options.",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "FEEDBACK_PROMPT",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "FEEDBACK_PROMPT = \"\"\"You are an encouraging and knowledgeable tutor providing feedback on quiz answers.\nThe student answered a question about {course} - {topic}.\nQuestion: {question}\nStudent's Answer: {user_answer}\nCorrect Answer: {correct_answer}\nExplanation: {explanation}\nYour task:\n1. If the answer is CORRECT:\n   - Give a brief, enthusiastic congratulatory message (1-2 sentences)\n   - Mention the specific concept they demonstrated understanding of",
+        "detail": "prompts",
+        "documentation": {}
+    }
+]

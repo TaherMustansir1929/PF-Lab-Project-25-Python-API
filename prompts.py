@@ -34,7 +34,7 @@ OUTPUT FORMAT (IMPORTANT NOTE: Very strictly follow the output format below and 
         "C": "<Option C>",
         "D": "<Option D>"
     }},
-    "correct_answer": "<Either A, B, C or D (should be only single letter, also try to hide the answer between options)>",
+    "correct_answer": "<Either A, B, C or D (should be only single letter, try to avoid placing correct answer on option A on difficulty levels above 3, otherwise randomize)>",
     "explanation": "Brief explanation of why this is correct and why others are wrong (2-3 sentences)",
     "difficulty": {difficulty}
 }}

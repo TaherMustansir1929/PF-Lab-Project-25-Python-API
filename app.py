@@ -18,6 +18,7 @@ from models import (
     QuizStartRequest,
     QuizStartResponse,
     QuizStatusResponse,
+    HealthCheckResponse,
 )
 
 # ============================================================================
@@ -40,7 +41,7 @@ app.add_middleware(
 )
 
 # In-memory session storage
-active_sessions: dict[str, QuizState] = {}
+memory_storage: dict[str, dict[str, QuizState]] = {}
 
 
 # ============================================================================
@@ -61,9 +62,13 @@ async def start_quiz(request: QuizStartRequest):
     generates the first question, and returns the session ID.
     """
     try:
+        # Initialize user storage if not exists
+        if request.user_id not in memory_storage:
+            memory_storage[request.user_id] = {}
+
         # Check if session already exists
-        if request.session_id and request.session_id in active_sessions:
-            initial_state = active_sessions[request.session_id]
+        if request.session_id and request.session_id in memory_storage[request.user_id]:
+            initial_state = memory_storage[request.user_id][request.session_id]
             session_id = request.session_id
 
             # Validate phase
@@ -77,7 +82,7 @@ async def start_quiz(request: QuizStartRequest):
             result = generate_mcq_node(initial_state)
 
             # Store session
-            active_sessions[session_id] = result
+            memory_storage[request.user_id][session_id] = result
         else:
             # Generate unique session ID
             session_id = str(uuid.uuid4())
@@ -105,7 +110,7 @@ async def start_quiz(request: QuizStartRequest):
             result = generate_mcq_node(initial_state)
 
             # Store session
-            active_sessions[session_id] = result
+            memory_storage[request.user_id][session_id] = result
 
         return QuizStartResponse(
             session_id=session_id,
@@ -134,14 +139,17 @@ async def submit_answer(request: AnswerSubmitRequest):
     and generates the next question.
     """
     # Validate session exists
-    if request.session_id not in active_sessions:
+    if (
+        request.user_id not in memory_storage
+        or request.session_id not in memory_storage[request.user_id]
+    ):
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Quiz session not found or expired",
         )
 
     try:
-        current_state = active_sessions[request.session_id]
+        current_state = memory_storage[request.user_id][request.session_id]
 
         # Validate phase
         if current_state["phase"] != "process_answer":
@@ -161,7 +169,7 @@ async def submit_answer(request: AnswerSubmitRequest):
         feedback_text = feedback_result["feedback"]
 
         # Update state
-        active_sessions[request.session_id] = feedback_result
+        memory_storage[request.user_id][request.session_id] = feedback_result
 
         return AnswerSubmitResponse(
             session_id=request.session_id,
@@ -181,20 +189,20 @@ async def submit_answer(request: AnswerSubmitRequest):
         )
 
 
-@app.get("/api/quiz/status/{session_id}", response_model=QuizStatusResponse)
-async def get_quiz_status(session_id: str):
+@app.get("/api/quiz/status/{user_id}/{session_id}", response_model=QuizStatusResponse)
+async def get_quiz_status(user_id: str, session_id: str):
     """
     Get the current status of a quiz session
 
     Returns session information including score, difficulty, and current phase.
     """
-    if session_id not in active_sessions:
+    if user_id not in memory_storage or session_id not in memory_storage[user_id]:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Quiz session not found or expired",
         )
 
-    state = active_sessions[session_id]
+    state = memory_storage[user_id][session_id]
 
     return QuizStatusResponse(
         session_id=session_id,
@@ -208,21 +216,21 @@ async def get_quiz_status(session_id: str):
     )
 
 
-@app.get("/api/quiz/end/{session_id}")
-@app.delete("/api/quiz/end/{session_id}")
-@app.post("/api/quiz/end/{session_id}")
-async def end_quiz(session_id: str):
+@app.get("/api/quiz/end/{user_id}/{session_id}")
+@app.delete("/api/quiz/end/{user_id}/{session_id}")
+@app.post("/api/quiz/end/{user_id}/{session_id}")
+async def end_quiz(user_id: str, session_id: str):
     """
     End a quiz session and clean up resources
 
     Removes the session from active sessions.
     """
-    if session_id not in active_sessions:
+    if user_id not in memory_storage or session_id not in memory_storage[user_id]:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Quiz session not found"
         )
 
-    state = active_sessions[session_id]
+    state = memory_storage[user_id][session_id]
     final_score = {
         "session_id": session_id,
         "score": state["score"],
@@ -234,20 +242,24 @@ async def end_quiz(session_id: str):
     }
 
     # Clean up session
-    del active_sessions[session_id]
+    # del memory_storage[user_id][session_id]
 
     return {"message": "Quiz session ended successfully", "final_results": final_score}
 
 
 @app.get("/api/health")
-async def health_check():
+async def health_check() -> HealthCheckResponse:
     """Health check endpoint"""
-    return {
-        "status": "healthy",
-        "active_sessions_count": len(active_sessions),
-        "active_sessions_ids": list(active_sessions.keys()),
-        "timestamp": datetime.now().isoformat(),
-    }
+    return HealthCheckResponse(
+        status="healthy",
+        active_user_count=len(memory_storage),
+        quiz_session_count=sum(len(sessions) for sessions in memory_storage.values()),
+        quiz_session_ids={
+            user_id: list(sessions.keys())
+            for user_id, sessions in memory_storage.items()
+        },
+        timestamp=datetime.now().isoformat(),
+    )
 
 
 # ============================================================================
@@ -259,8 +271,8 @@ async def health_check():
 async def startup_event():
     """Initialize the application on startup"""
     # Verify Google API key is set
-    if not os.getenv("GOOGLE_API_KEY"):
-        print("WARNING: GOOGLE_API_KEY environment variable not set!")
+    if not os.getenv("GOOGLE_API_KEY") or not os.getenv("GROQ_API_KEY"):
+        print("WARNING: GOOGLE_API_KEY or GROQ_API_KEY environment variable not set!")
     print("Adaptive MCQ Quiz API started successfully")
 
 

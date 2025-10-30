@@ -5,6 +5,7 @@ import re
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 from langchain_groq import ChatGroq
 from prompts import MCQ_GENERATION_PROMPT, FEEDBACK_PROMPT
 from pydantic import BaseModel, Field
@@ -54,6 +55,7 @@ class MCQ(BaseModel):
 
 # llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 llm = ChatGroq(model="openai/gpt-oss-120b")
+# llm = ChatAnthropic(model_name="claude-sonnet-4-5", timeout=120, stop=None)
 
 
 def generate_mcq_node(state: QuizState) -> QuizState:

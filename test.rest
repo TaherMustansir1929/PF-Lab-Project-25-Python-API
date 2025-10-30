@@ -1,0 +1,9 @@
+### Start quiz
+POST http://localhost:8000/api/quiz/mcqs
+Content-Type: application/json
+
+{
+  "course": "Biology",
+  "topic": "Cell Structure",
+  "user_id": "25K-0119",
+}
