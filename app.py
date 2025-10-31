@@ -19,6 +19,8 @@ from models import (
     QuizStartResponse,
     QuizStatusResponse,
     HealthCheckResponse,
+    PFAnalyzerRequest,
+    PFAnalyzerResponse,
 )
 
 # ============================================================================
@@ -258,6 +260,51 @@ async def health_check() -> HealthCheckResponse:
             user_id: list(sessions.keys())
             for user_id, sessions in memory_storage.items()
         },
+        timestamp=datetime.now().isoformat(),
+    )
+
+from agent import analyze_profile, StudentProfile
+
+@app.post("/api/pfanalyzer", response_model=PFAnalyzerResponse)
+async def pf_analyzer(request: PFAnalyzerRequest):
+    """PF Analyzer endpoint"""
+    if request.student_id not in memory_storage:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Student id not found",
+        )
+        
+    quizzes = memory_storage[request.student_id]
+        
+    student_profile = StudentProfile(
+        cgpa=request.cgpa,
+        major=request.major,
+        short_term_goals=request.short_term_goals,
+        long_term_goals=request.long_term_goals,
+        industries_of_interest=request.industries_of_interest,
+        target_roles=request.target_roles,
+        quiz_performance=[
+            {
+                "course": quiz_state["course"],
+                "topic": quiz_state["topic"],
+                "score": quiz_state["score"],
+                "total_questions": quiz_state["total_questions"],
+                "difficulty_level": quiz_state["difficulty"],
+                "date_attempted": quiz_state["created_at"],
+            }
+            for session_id, quiz_state in quizzes.items()
+        ],
+    )
+    
+    try:
+        response = analyze_profile(student_profile)
+
+    except Exception as e:
+        print(f"Error analyzing profile: {e}")
+        response = "An error occurred while analyzing the profile. Try Again."
+
+    return PFAnalyzerResponse(
+        feedback=response,
         timestamp=datetime.now().isoformat(),
     )
 

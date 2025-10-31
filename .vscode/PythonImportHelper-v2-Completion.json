@@ -110,6 +110,14 @@
         "documentation": {}
     },
     {
+        "label": "SystemMessage",
+        "importPath": "langchain_core.messages",
+        "description": "langchain_core.messages",
+        "isExtraImport": true,
+        "detail": "langchain_core.messages",
+        "documentation": {}
+    },
+    {
         "label": "ChatGoogleGenerativeAI",
         "importPath": "langchain_google_genai",
         "description": "langchain_google_genai",
@@ -143,6 +151,22 @@
     },
     {
         "label": "FEEDBACK_PROMPT",
+        "importPath": "prompts",
+        "description": "prompts",
+        "isExtraImport": true,
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "create_analysis_request",
+        "importPath": "prompts",
+        "description": "prompts",
+        "isExtraImport": true,
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PF_ANALYZER_SYSTEM_PROMPT",
         "importPath": "prompts",
         "description": "prompts",
         "isExtraImport": true,
@@ -231,6 +255,22 @@
         "documentation": {}
     },
     {
+        "label": "analyze_profile",
+        "importPath": "agent",
+        "description": "agent",
+        "isExtraImport": true,
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "StudentProfile",
+        "importPath": "agent",
+        "description": "agent",
+        "isExtraImport": true,
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -304,6 +344,22 @@
     },
     {
         "label": "HealthCheckResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "PFAnalyzerRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "PFAnalyzerResponse",
         "importPath": "models",
         "description": "models",
         "isExtraImport": true,
@@ -419,11 +475,20 @@
         "documentation": {}
     },
     {
+        "label": "StudentProfile",
+        "kind": 6,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "class StudentProfile(BaseModel):\n    cgpa: float = Field(..., description=\"Cumulative Grade Point Average\")\n    major: str = Field(..., description=\"Student's major field of study\")\n    short_term_goals: str = Field(..., description=\"Student's short term career goals\")\n    long_term_goals: str = Field(..., description=\"Student's long term career goals\")\n    industries_of_interest: str = Field(..., description=\"Industries the student is interested in\")\n    target_roles: str = Field(..., description=\"Target job roles the student aims for\")\n    quiz_performance: list[dict] = Field(..., description=\"Performance metrics from quizzes taken by the student\")\ndef analyze_profile(student_profile: StudentProfile) -> str:\n    \"\"\"Analyzes the student profile and returns a summary string.\"\"\"",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
         "label": "generate_mcq_node",
         "kind": 2,
         "importPath": "agent",
         "description": "agent",
-        "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [HumanMessage(content=prompt)]\n    chain = ChatPromptTemplate.from_messages(messages) | llm",
+        "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [SystemMessage(content=prompt)]\n    chain = ChatPromptTemplate.from_messages(messages) | llm",
         "detail": "agent",
         "documentation": {}
     },
@@ -433,6 +498,15 @@
         "importPath": "agent",
         "description": "agent",
         "peekOfCode": "def process_answer_node(state: QuizState) -> QuizState:\n    # Normalize answers for comparison\n    user_ans = state[\"user_answer\"].strip().upper()\n    correct_ans = state[\"correct_answer\"].strip().upper()\n    is_correct = user_ans == correct_ans\n    # Update score and difficulty\n    new_score = state[\"score\"] + (1 if is_correct else 0)\n    new_total = state[\"total_questions\"] + 1\n    # Adaptive difficulty adjustment\n    new_difficulty = state[\"difficulty\"]",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_profile",
+        "kind": 2,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "def analyze_profile(student_profile: StudentProfile) -> str:\n    \"\"\"Analyzes the student profile and returns a summary string.\"\"\"\n    analysis_request = create_analysis_request(\n        {\"cgpa\": student_profile.cgpa,\n        \"major\": student_profile.major,\n        \"short_term_goals\": student_profile.short_term_goals,\n        \"long_term_goals\": student_profile.long_term_goals,\n        \"industries_of_interest\": student_profile.industries_of_interest,\n        \"target_roles\": student_profile.target_roles,\n        \"quiz_performance\": student_profile.quiz_performance",
         "detail": "agent",
         "documentation": {}
     },
@@ -513,8 +587,35 @@
         "kind": 6,
         "importPath": "models",
         "description": "models",
-        "peekOfCode": "class HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(\n        ..., description=\"Mapping of user IDs to their active session IDs\"\n    )\n    timestamp: str = Field(..., description=\"Timestamp of the health check\")",
+        "peekOfCode": "class HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(\n        ..., description=\"Mapping of user IDs to their active session IDs\"\n    )\n    timestamp: str = Field(..., description=\"Timestamp of the health check\")\nclass PFAnalyzerRequest(BaseModel):",
         "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "PFAnalyzerRequest",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class PFAnalyzerRequest(BaseModel):\n    \"\"\"Request model for PF Analyzer\"\"\"\n    student_id: str = Field(..., description=\"User identifier\")\n    cgpa: float = Field(..., ge=0.0, le=10.0, description=\"Cumulative GPA (0.0 - 4.0)\")\n    major: str = Field(..., description=\"Major/field of study\")\n    short_term_goals: str = Field(..., description=\"Short-term career goals\")\n    long_term_goals: str = Field(..., description=\"Long-term career goals\")\n    industries_of_interest: str = Field(..., description=\"Industries of interest\")\n    target_roles: str = Field(..., description=\"Target job roles/positions\")\nclass PFAnalyzerResponse(BaseModel):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "PFAnalyzerResponse",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class PFAnalyzerResponse(BaseModel):\n    \"\"\"Response model for PF Analyzer\"\"\"\n    feedback: str = Field(..., description=\"Personalized feedback and recommendations\")\n    timestamp: str = Field(..., description=\"Timestamp of the analysis\")",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "create_analysis_request",
+        "kind": 2,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "def create_analysis_request(student_data: dict) -> str:\n    \"\"\"\n    Combines the system prompt with student data for AI analysis\n    Args:\n        student_data: Dictionary containing student profile information\n    Returns:\n        Complete prompt string for AI model\n    \"\"\"\n    import json\n    user_prompt = f\"\"\"",
+        "detail": "prompts",
         "documentation": {}
     },
     {
@@ -532,6 +633,15 @@
         "importPath": "prompts",
         "description": "prompts",
         "peekOfCode": "FEEDBACK_PROMPT = \"\"\"You are an encouraging and knowledgeable tutor providing feedback on quiz answers.\nThe student answered a question about {course} - {topic}.\nQuestion: {question}\nStudent's Answer: {user_answer}\nCorrect Answer: {correct_answer}\nExplanation: {explanation}\nYour task:\n1. If the answer is CORRECT:\n   - Give a brief, enthusiastic congratulatory message (1-2 sentences)\n   - Mention the specific concept they demonstrated understanding of",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PF_ANALYZER_SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "PF_ANALYZER_SYSTEM_PROMPT = \"\"\"You are an expert educational advisor and career counselor AI with deep expertise in academic assessment, skill development, and career planning. Your role is to analyze student profiles comprehensively and provide actionable, personalized guidance.\n## YOUR ANALYSIS FRAMEWORK\nYou will receive student data in the following format:\n### STUDENT PROFILE STRUCTURE:\n```\n{\n    \"cgpa\": float,  # Out of 4.0\n    \"major\": str,\n    \"short_term_goals\": str,  # 1-2 years\n    \"long_term_goals\": str,   # 5+ years",
         "detail": "prompts",
         "documentation": {}
     }

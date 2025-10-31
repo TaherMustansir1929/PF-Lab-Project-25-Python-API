@@ -84,3 +84,22 @@ class HealthCheckResponse(BaseModel):
         ..., description="Mapping of user IDs to their active session IDs"
     )
     timestamp: str = Field(..., description="Timestamp of the health check")
+
+
+class PFAnalyzerRequest(BaseModel):
+    """Request model for PF Analyzer"""
+
+    student_id: str = Field(..., description="User identifier")
+    cgpa: float = Field(..., ge=0.0, le=10.0, description="Cumulative GPA (0.0 - 4.0)")
+    major: str = Field(..., description="Major/field of study")
+    short_term_goals: str = Field(..., description="Short-term career goals")
+    long_term_goals: str = Field(..., description="Long-term career goals")
+    industries_of_interest: str = Field(..., description="Industries of interest")
+    target_roles: str = Field(..., description="Target job roles/positions")
+
+
+class PFAnalyzerResponse(BaseModel):
+    """Response model for PF Analyzer"""
+
+    feedback: str = Field(..., description="Personalized feedback and recommendations")
+    timestamp: str = Field(..., description="Timestamp of the analysis")

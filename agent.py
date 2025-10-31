@@ -3,7 +3,7 @@ import json
 import re
 
 from langchain.prompts import ChatPromptTemplate
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
 from langchain_groq import ChatGroq
@@ -67,7 +67,7 @@ def generate_mcq_node(state: QuizState) -> QuizState:
         difficulty=state["difficulty"],
         history=state.get("current_mcq", "No previous questions."),
     )
-    messages = [HumanMessage(content=prompt)]
+    messages = [SystemMessage(content=prompt)]
     chain = ChatPromptTemplate.from_messages(messages) | llm
 
     response_text = ""
@@ -170,3 +170,31 @@ def process_answer_node(state: QuizState) -> QuizState:
     state["feedback"] = feedback
 
     return state
+
+from prompts import create_analysis_request, PF_ANALYZER_SYSTEM_PROMPT
+
+class StudentProfile(BaseModel):
+    cgpa: float = Field(..., description="Cumulative Grade Point Average")
+    major: str = Field(..., description="Student's major field of study")
+    short_term_goals: str = Field(..., description="Student's short term career goals")
+    long_term_goals: str = Field(..., description="Student's long term career goals")
+    industries_of_interest: str = Field(..., description="Industries the student is interested in")
+    target_roles: str = Field(..., description="Target job roles the student aims for")
+    quiz_performance: list[dict] = Field(..., description="Performance metrics from quizzes taken by the student")
+
+def analyze_profile(student_profile: StudentProfile) -> str:
+    """Analyzes the student profile and returns a summary string."""
+
+    analysis_request = create_analysis_request(
+        {"cgpa": student_profile.cgpa,
+        "major": student_profile.major,
+        "short_term_goals": student_profile.short_term_goals,
+        "long_term_goals": student_profile.long_term_goals,
+        "industries_of_interest": student_profile.industries_of_interest,
+        "target_roles": student_profile.target_roles,
+        "quiz_performance": student_profile.quiz_performance
+    })
+    messages = [SystemMessage(content=PF_ANALYZER_SYSTEM_PROMPT), HumanMessage(content=analysis_request)]
+    response = llm.invoke(messages)
+
+    return str(response.content).strip()

@@ -6,4 +6,29 @@ Content-Type: application/json
   "course": "Biology",
   "topic": "Cell Structure",
   "user_id": "25K-0119",
+  "initial_difficulty": 2
+}
+
+### Answer MCQ
+POST http://localhost:8000/api/quiz/answer
+Content-Type: application/json
+
+{
+  "session_id": "",
+  "user_id": "25K-0119",
+  "answer": ""
+}
+
+### Profile Analyzer
+POST http://localhost:8000/api/pfanalyzer
+Content-Type: application/json
+
+{
+  "student_id": "25K-0119",
+  "cgpa": 3.2,
+  "major": "Artificial Intelligence",
+  "short_term_goal": "",
+  "long_term_goal": "",
+  "industries_of_interest": "",
+  "target_roles": ""
 }
