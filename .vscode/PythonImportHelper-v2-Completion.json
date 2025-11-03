@@ -886,7 +886,7 @@
         "kind": 5,
         "importPath": "src.db.index",
         "description": "src.db.index",
-        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif not DATABASE_URL:\n    raise ValueError(\"DATABASE_URL environment variable is not set\")\nengine = create_engine(\n    DATABASE_URL,\n    pool_size=10,\n    max_overflow=20,\n    pool_pre_ping=True,\n    pool_recycle=3600\n)",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif not DATABASE_URL:\n    raise ValueError(\"DATABASE_URL environment variable is not set\")\n# Fix for psycopg3: Replace postgres:// with postgresql://\nif DATABASE_URL.startswith(\"postgres://\"):\n    DATABASE_URL = DATABASE_URL.replace(\"postgres://\", \"postgresql://\", 1)\nengine = create_engine(\n    DATABASE_URL,\n    pool_size=10,\n    max_overflow=20,",
         "detail": "src.db.index",
         "documentation": {}
     },
