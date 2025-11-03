@@ -44,6 +44,159 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "src.db.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "src.db.models",
+        "description": "src.db.models",
+        "detail": "src.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Literal",
         "importPath": "typing",
         "description": "typing",
@@ -73,6 +226,159 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "isExtraImport": true,
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "isExtraImport": true,
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "isExtraImport": true,
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "isExtraImport": true,
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -143,131 +449,82 @@
     },
     {
         "label": "MCQ_GENERATION_PROMPT",
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "isExtraImport": true,
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "FEEDBACK_PROMPT",
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "isExtraImport": true,
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "create_analysis_request",
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "isExtraImport": true,
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "PF_ANALYZER_SYSTEM_PROMPT",
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "isExtraImport": true,
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
         "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
+        "detail": "contextlib",
         "documentation": {}
     },
     {
         "label": "QuizState",
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "isExtraImport": true,
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "generate_mcq_node",
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "isExtraImport": true,
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "process_answer_node",
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "isExtraImport": true,
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "analyze_profile",
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "isExtraImport": true,
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "StudentProfile",
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "isExtraImport": true,
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
@@ -295,6 +552,14 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "CORSMiddleware",
         "importPath": "fastapi.middleware.cors",
         "description": "fastapi.middleware.cors",
@@ -304,66 +569,91 @@
     },
     {
         "label": "AnswerSubmitRequest",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "AnswerSubmitResponse",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "QuizStartRequest",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "QuizStartResponse",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "QuizStatusResponse",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "HealthCheckResponse",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "PFAnalyzerRequest",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "PFAnalyzerResponse",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "crud",
+        "importPath": "src.db",
+        "description": "src.db",
+        "isExtraImport": true,
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
+        "label": "schemas",
+        "importPath": "src.db",
+        "description": "src.db",
+        "isExtraImport": true,
+        "detail": "src.db",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
         "documentation": {}
     },
     {
@@ -448,201 +738,435 @@
         "documentation": {}
     },
     {
+        "label": "create_quiz_session",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def create_quiz_session(db: Session, session_data: schemas.QuizSessionCreate):\n    \"\"\"Create a new quiz session\"\"\"\n    db_session = models.QuizSession(**session_data.model_dump())\n    db.add(db_session)\n    db.commit()\n    db.refresh(db_session)\n    return db_session\ndef get_quiz_session(db: Session, session_id: str) -> Optional[models.QuizSession]:\n    \"\"\"Get a quiz session by session_id\"\"\"\n    return db.query(models.QuizSession).filter(models.QuizSession.session_id == session_id).first()",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_quiz_session",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_quiz_session(db: Session, session_id: str) -> Optional[models.QuizSession]:\n    \"\"\"Get a quiz session by session_id\"\"\"\n    return db.query(models.QuizSession).filter(models.QuizSession.session_id == session_id).first()\ndef get_quiz_session_by_student_and_session(db: Session, student_id: str, session_id: str) -> Optional[models.QuizSession]:\n    \"\"\"Get a quiz session by student_id and session_id\"\"\"\n    return db.query(models.QuizSession).filter(\n        models.QuizSession.student_id == student_id,\n        models.QuizSession.session_id == session_id\n    ).first()\ndef update_quiz_session(db: Session, session_id: str, session_update: schemas.QuizSessionUpdate):",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_quiz_session_by_student_and_session",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_quiz_session_by_student_and_session(db: Session, student_id: str, session_id: str) -> Optional[models.QuizSession]:\n    \"\"\"Get a quiz session by student_id and session_id\"\"\"\n    return db.query(models.QuizSession).filter(\n        models.QuizSession.student_id == student_id,\n        models.QuizSession.session_id == session_id\n    ).first()\ndef update_quiz_session(db: Session, session_id: str, session_update: schemas.QuizSessionUpdate):\n    \"\"\"Update an existing quiz session\"\"\"\n    db_session = db.query(models.QuizSession).filter(models.QuizSession.session_id == session_id).first()\n    if not db_session:",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "update_quiz_session",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def update_quiz_session(db: Session, session_id: str, session_update: schemas.QuizSessionUpdate):\n    \"\"\"Update an existing quiz session\"\"\"\n    db_session = db.query(models.QuizSession).filter(models.QuizSession.session_id == session_id).first()\n    if not db_session:\n        return None\n    for key, value in session_update.model_dump(exclude_unset=True).items():\n        setattr(db_session, key, value)\n    db.commit()\n    db.refresh(db_session)\n    return db_session",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "delete_quiz_session",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def delete_quiz_session(db: Session, session_id: str) -> bool:\n    \"\"\"Delete a quiz session\"\"\"\n    db_session = db.query(models.QuizSession).filter(models.QuizSession.session_id == session_id).first()\n    if not db_session:\n        return False\n    db.delete(db_session)\n    db.commit()\n    return True\ndef get_student_quiz_sessions(db: Session, student_id: str) -> list[models.QuizSession]:\n    \"\"\"Get all active quiz sessions for a student\"\"\"",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_student_quiz_sessions",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_student_quiz_sessions(db: Session, student_id: str) -> list[models.QuizSession]:\n    \"\"\"Get all active quiz sessions for a student\"\"\"\n    return db.query(models.QuizSession).filter(models.QuizSession.student_id == student_id).all()\ndef count_all_sessions(db: Session) -> int:\n    \"\"\"Count all active quiz sessions\"\"\"\n    return db.query(models.QuizSession).count()\ndef count_unique_students_with_sessions(db: Session) -> int:\n    \"\"\"Count unique students with active sessions\"\"\"\n    return db.query(func.count(func.distinct(models.QuizSession.student_id))).scalar()\ndef get_all_sessions_grouped_by_student(db: Session) -> Dict[str, list[str]]:",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "count_all_sessions",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def count_all_sessions(db: Session) -> int:\n    \"\"\"Count all active quiz sessions\"\"\"\n    return db.query(models.QuizSession).count()\ndef count_unique_students_with_sessions(db: Session) -> int:\n    \"\"\"Count unique students with active sessions\"\"\"\n    return db.query(func.count(func.distinct(models.QuizSession.student_id))).scalar()\ndef get_all_sessions_grouped_by_student(db: Session) -> Dict[str, list[str]]:\n    \"\"\"Get all session IDs grouped by student ID\"\"\"\n    sessions = db.query(models.QuizSession.student_id, models.QuizSession.session_id).all()\n    grouped = {}",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "count_unique_students_with_sessions",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def count_unique_students_with_sessions(db: Session) -> int:\n    \"\"\"Count unique students with active sessions\"\"\"\n    return db.query(func.count(func.distinct(models.QuizSession.student_id))).scalar()\ndef get_all_sessions_grouped_by_student(db: Session) -> Dict[str, list[str]]:\n    \"\"\"Get all session IDs grouped by student ID\"\"\"\n    sessions = db.query(models.QuizSession.student_id, models.QuizSession.session_id).all()\n    grouped = {}\n    for student_id, session_id in sessions:\n        if student_id not in grouped:\n            grouped[student_id] = []",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_sessions_grouped_by_student",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_all_sessions_grouped_by_student(db: Session) -> Dict[str, list[str]]:\n    \"\"\"Get all session IDs grouped by student ID\"\"\"\n    sessions = db.query(models.QuizSession.student_id, models.QuizSession.session_id).all()\n    grouped = {}\n    for student_id, session_id in sessions:\n        if student_id not in grouped:\n            grouped[student_id] = []\n        grouped[student_id].append(session_id)\n    return grouped\ndef quiz_session_to_state(session: models.QuizSession) -> Dict[str, Any]:",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "quiz_session_to_state",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def quiz_session_to_state(session: models.QuizSession) -> Dict[str, Any]:\n    \"\"\"Convert a QuizSession database model to QuizState dictionary\"\"\"\n    return {\n        \"course\": session.course,\n        \"topic\": session.topic,\n        \"difficulty\": session.difficulty,\n        \"current_mcq\": session.current_mcq,\n        \"options\": session.options,\n        \"user_answer\": session.user_answer,\n        \"correct_answer\": session.correct_answer,",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "state_to_quiz_session_update",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def state_to_quiz_session_update(state: Dict[str, Any]) -> schemas.QuizSessionUpdate:\n    \"\"\"Convert QuizState dictionary to QuizSessionUpdate schema\"\"\"\n    return schemas.QuizSessionUpdate(\n        difficulty=state.get(\"difficulty\"),\n        current_mcq=state.get(\"current_mcq\"),\n        options=state.get(\"options\"),\n        user_answer=state.get(\"user_answer\"),\n        correct_answer=state.get(\"correct_answer\"),\n        explanation=state.get(\"explanation\"),\n        score=state.get(\"score\"),",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "create_quiz",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def create_quiz(db: Session, quiz: schemas.QuizCreate):\n    \"\"\"Create a completed quiz record\"\"\"\n    db_quiz = models.Quiz(**quiz.model_dump())\n    db.add(db_quiz)\n    db.commit()\n    db.refresh(db_quiz)\n    return db_quiz\ndef update_quiz(db: Session, session_id: str, quiz_update: schemas.QuizUpdate):\n    \"\"\"Update a completed quiz record\"\"\"\n    db_quiz = db.query(models.Quiz).filter(models.Quiz.session_id == session_id).first()",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "update_quiz",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def update_quiz(db: Session, session_id: str, quiz_update: schemas.QuizUpdate):\n    \"\"\"Update a completed quiz record\"\"\"\n    db_quiz = db.query(models.Quiz).filter(models.Quiz.session_id == session_id).first()\n    if not db_quiz:\n        return None\n    for key, value in quiz_update.model_dump(exclude_unset=True).items():\n        setattr(db_quiz, key, value)\n    db.commit()\n    db.refresh(db_quiz)\n    return db_quiz",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_quiz",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_quiz(db: Session, session_id: str):\n    \"\"\"Get a completed quiz by session_id\"\"\"\n    return db.query(models.Quiz).filter(models.Quiz.session_id == session_id).first()\ndef get_student_quizzes(db: Session, student_id: str, skip: int = 0, limit: int = 100):\n    \"\"\"Get all completed quizzes for a student\"\"\"\n    return db.query(models.Quiz).filter(models.Quiz.student_id == student_id).offset(skip).limit(limit).all()",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_student_quizzes",
+        "kind": 2,
+        "importPath": "src.db.crud",
+        "description": "src.db.crud",
+        "peekOfCode": "def get_student_quizzes(db: Session, student_id: str, skip: int = 0, limit: int = 100):\n    \"\"\"Get all completed quizzes for a student\"\"\"\n    return db.query(models.Quiz).filter(models.Quiz.student_id == student_id).offset(skip).limit(limit).all()",
+        "detail": "src.db.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\")\nif not DATABASE_URL:\n    raise ValueError(\"DATABASE_URL environment variable is not set\")\nengine = create_engine(\n    DATABASE_URL,\n    pool_size=10,\n    max_overflow=20,\n    pool_pre_ping=True,\n    pool_recycle=3600\n)",
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "peekOfCode": "engine = create_engine(\n    DATABASE_URL,\n    pool_size=10,\n    max_overflow=20,\n    pool_pre_ping=True,\n    pool_recycle=3600\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# Dependency to get DB session",
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\n# Dependency to get DB session\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "src.db.index",
+        "description": "src.db.index",
+        "peekOfCode": "Base = declarative_base()\n# Dependency to get DB session\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "src.db.index",
+        "documentation": {}
+    },
+    {
+        "label": "QuizSession",
+        "kind": 6,
+        "importPath": "src.db.models",
+        "description": "src.db.models",
+        "peekOfCode": "class QuizSession(Base):\n    \"\"\"Active quiz session state\"\"\"\n    __tablename__ = \"quiz_sessions\"\n    session_id = Column(String(50), primary_key=True, index=True)\n    student_id = Column(String(50), nullable=False, index=True)\n    course = Column(String(200), nullable=False)\n    topic = Column(String(200), nullable=False)\n    difficulty = Column(Integer, nullable=False)\n    current_mcq = Column(Text, nullable=False, default=\"\")\n    options = Column(JSON, nullable=False, default={})",
+        "detail": "src.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Quiz",
+        "kind": 6,
+        "importPath": "src.db.models",
+        "description": "src.db.models",
+        "peekOfCode": "class Quiz(Base):\n    \"\"\"Completed quiz record\"\"\"\n    __tablename__ = \"quizzes\"\n    session_id = Column(String(50), primary_key=True, index=True)\n    student_id = Column(String(50), nullable=False, index=True)\n    course = Column(String(200), nullable=False)\n    topic = Column(String(200), nullable=False)\n    final_difficulty = Column(Integer, nullable=False)\n    score = Column(Integer, nullable=False)\n    total_questions = Column(Integer, nullable=False)",
+        "detail": "src.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "QuizSessionCreate",
+        "kind": 6,
+        "importPath": "src.db.schemas",
+        "description": "src.db.schemas",
+        "peekOfCode": "class QuizSessionCreate(BaseModel):\n    session_id: str\n    student_id: str = Field(..., max_length=50)\n    course: str = Field(..., max_length=200)\n    topic: str = Field(..., max_length=200)\n    difficulty: int\n    current_mcq: str = \"\"\n    options: dict = {}\n    user_answer: str = \"A\"\n    correct_answer: str = \"A\"",
+        "detail": "src.db.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "QuizSessionUpdate",
+        "kind": 6,
+        "importPath": "src.db.schemas",
+        "description": "src.db.schemas",
+        "peekOfCode": "class QuizSessionUpdate(BaseModel):\n    difficulty: Optional[int] = None\n    current_mcq: Optional[str] = None\n    options: Optional[dict] = None\n    user_answer: Optional[str] = None\n    correct_answer: Optional[str] = None\n    explanation: Optional[str] = None\n    score: Optional[int] = None\n    total_questions: Optional[int] = None\n    feedback: Optional[str] = None",
+        "detail": "src.db.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "QuizCreate",
+        "kind": 6,
+        "importPath": "src.db.schemas",
+        "description": "src.db.schemas",
+        "peekOfCode": "class QuizCreate(BaseModel):\n    session_id: str\n    student_id: str = Field(..., max_length=50)\n    course: str = Field(..., max_length=200)\n    topic: str = Field(..., max_length=200)\n    final_difficulty: int\n    score: int\n    total_questions: int\nclass QuizUpdate(BaseModel):\n    final_difficulty: Optional[int] = None",
+        "detail": "src.db.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "QuizUpdate",
+        "kind": 6,
+        "importPath": "src.db.schemas",
+        "description": "src.db.schemas",
+        "peekOfCode": "class QuizUpdate(BaseModel):\n    final_difficulty: Optional[int] = None\n    score: Optional[int] = None\n    total_questions: Optional[int] = None",
+        "detail": "src.db.schemas",
+        "documentation": {}
+    },
+    {
         "label": "QuizState",
         "kind": 6,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "class QuizState(TypedDict):\n    \"\"\"Represents the state of the quiz session\"\"\"\n    course: str\n    topic: str\n    difficulty: int\n    current_mcq: str\n    options: dict[str, str]\n    user_answer: Literal[\"A\", \"B\", \"C\", \"D\"]\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"]\n    explanation: str",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "Options",
         "kind": 6,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "class Options(BaseModel):\n    A: str = Field(..., description=\"Option A text\")\n    B: str = Field(..., description=\"Option B text\")\n    C: str = Field(..., description=\"Option C text\")\n    D: str = Field(..., description=\"Option D text\")\nclass MCQ(BaseModel):\n    question: str = Field(..., description=\"Question text for the MCQ\")\n    options: Options = Field(..., description=\"The four answer options (A, B, C, D)\")\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"Correct option for your question. Either of [A, B, C, D]\"",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "MCQ",
         "kind": 6,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "class MCQ(BaseModel):\n    question: str = Field(..., description=\"Question text for the MCQ\")\n    options: Options = Field(..., description=\"The four answer options (A, B, C, D)\")\n    correct_answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"Correct option for your question. Either of [A, B, C, D]\"\n    )\n    explanation: str = Field(\n        ...,\n        description=\"Brief explanation of why this is correct and why others are wrong (2-3 sentences)\",\n    )",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "StudentProfile",
         "kind": 6,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "class StudentProfile(BaseModel):\n    cgpa: float = Field(..., description=\"Cumulative Grade Point Average\")\n    major: str = Field(..., description=\"Student's major field of study\")\n    short_term_goals: str = Field(..., description=\"Student's short term career goals\")\n    long_term_goals: str = Field(..., description=\"Student's long term career goals\")\n    industries_of_interest: str = Field(..., description=\"Industries the student is interested in\")\n    target_roles: str = Field(..., description=\"Target job roles the student aims for\")\n    quiz_performance: list[dict] = Field(..., description=\"Performance metrics from quizzes taken by the student\")\ndef analyze_profile(student_profile: StudentProfile) -> str:\n    \"\"\"Analyzes the student profile and returns a summary string.\"\"\"",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "generate_mcq_node",
         "kind": 2,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [SystemMessage(content=prompt)]\n    chain = ChatPromptTemplate.from_messages(messages) | llm",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "process_answer_node",
         "kind": 2,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "def process_answer_node(state: QuizState) -> QuizState:\n    # Normalize answers for comparison\n    user_ans = state[\"user_answer\"].strip().upper()\n    correct_ans = state[\"correct_answer\"].strip().upper()\n    is_correct = user_ans == correct_ans\n    # Update score and difficulty\n    new_score = state[\"score\"] + (1 if is_correct else 0)\n    new_total = state[\"total_questions\"] + 1\n    # Adaptive difficulty adjustment\n    new_difficulty = state[\"difficulty\"]",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "analyze_profile",
         "kind": 2,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "def analyze_profile(student_profile: StudentProfile) -> str:\n    \"\"\"Analyzes the student profile and returns a summary string.\"\"\"\n    analysis_request = create_analysis_request(\n        {\"cgpa\": student_profile.cgpa,\n        \"major\": student_profile.major,\n        \"short_term_goals\": student_profile.short_term_goals,\n        \"long_term_goals\": student_profile.long_term_goals,\n        \"industries_of_interest\": student_profile.industries_of_interest,\n        \"target_roles\": student_profile.target_roles,\n        \"quiz_performance\": student_profile.quiz_performance",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "llm",
         "kind": 5,
-        "importPath": "agent",
-        "description": "agent",
+        "importPath": "src.agent",
+        "description": "src.agent",
         "peekOfCode": "llm = ChatGroq(model=\"openai/gpt-oss-120b\")\n# llm = ChatAnthropic(model_name=\"claude-sonnet-4-5\", timeout=120, stop=None)\ndef generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )",
-        "detail": "agent",
+        "detail": "src.agent",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app = FastAPI(\n    title=\"Adaptive MCQ Quiz API\",\n    description=\"REST API for an adaptive multiple-choice quiz system using Langchain and Google Gemini\",\n    version=\"1.0.0\",\n)\n# CORS middleware for frontend integration\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Configure appropriately for production\n    allow_credentials=True,",
-        "detail": "app",
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "app = FastAPI(\n    title=\"Adaptive MCQ Quiz API\",\n    description=\"REST API for an adaptive multiple-choice quiz system using Langchain and Google Gemini\",\n    version=\"1.0.0\",\n    lifespan=lifespan,\n)\n# CORS middleware for frontend integration\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # Configure appropriately for production",
+        "detail": "src.app",
         "documentation": {}
     },
     {
         "label": "QuizStartRequest",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class QuizStartRequest(BaseModel):\n    \"\"\"Request model to start a new quiz session\"\"\"\n    course: str = Field(..., description=\"Course/subject name\")\n    topic: str = Field(..., description=\"Specific topic within the course\")\n    user_id: str = Field(..., description=\"User identifier\")\n    session_id: Optional[str] = Field(\n        None, description=\"Optional session identifier if session exists\"\n    )\n    initial_difficulty: int = Field(\n        2, ge=1, le=5, description=\"Starting difficulty level (1-5)\"",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "QuizStartResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class QuizStartResponse(BaseModel):\n    \"\"\"Response model for starting a quiz\"\"\"\n    session_id: str\n    course: str\n    topic: str\n    difficulty: int\n    question: str\n    options: dict[str, str]\n    question_number: int\n    message: str",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "AnswerSubmitRequest",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class AnswerSubmitRequest(BaseModel):\n    \"\"\"Request model to submit an answer\"\"\"\n    session_id: str = Field(..., description=\"Quiz session identifier\")\n    user_id: str = Field(..., description=\"User identifier\")\n    answer: Literal[\"A\", \"B\", \"C\", \"D\"] = Field(\n        ..., description=\"User's answer (A, B, C, or D)\", pattern=\"^[A-Da-d]$\"\n    )\nclass AnswerSubmitResponse(BaseModel):\n    \"\"\"Response model after submitting an answer\"\"\"\n    session_id: str",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "AnswerSubmitResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class AnswerSubmitResponse(BaseModel):\n    \"\"\"Response model after submitting an answer\"\"\"\n    session_id: str\n    is_correct: bool\n    feedback: str\n    score: int\n    total_questions: int\n    new_difficulty: int\nclass QuizStatusResponse(BaseModel):\n    \"\"\"Response model for quiz session status\"\"\"",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "QuizStatusResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class QuizStatusResponse(BaseModel):\n    \"\"\"Response model for quiz session status\"\"\"\n    session_id: str\n    course: str\n    topic: str\n    score: int\n    total_questions: int\n    difficulty: int\n    current_phase: str\n    created_at: str",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "ErrorResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class ErrorResponse(BaseModel):\n    \"\"\"Error response model\"\"\"\n    error: str\n    detail: Optional[str] = None\nclass HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "HealthCheckResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class HealthCheckResponse(BaseModel):\n    \"\"\"Health check response model\"\"\"\n    status: str = Field(..., description=\"Service status\")\n    active_user_count: int = Field(..., description=\"Number of active users\")\n    quiz_session_count: int = Field(..., description=\"Number of active quiz sessions\")\n    quiz_session_ids: dict[str, list[str]] = Field(\n        ..., description=\"Mapping of user IDs to their active session IDs\"\n    )\n    timestamp: str = Field(..., description=\"Timestamp of the health check\")\nclass PFAnalyzerRequest(BaseModel):",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "PFAnalyzerRequest",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class PFAnalyzerRequest(BaseModel):\n    \"\"\"Request model for PF Analyzer\"\"\"\n    student_id: str = Field(..., description=\"User identifier\")\n    cgpa: float = Field(..., ge=0.0, le=10.0, description=\"Cumulative GPA (0.0 - 4.0)\")\n    major: str = Field(..., description=\"Major/field of study\")\n    short_term_goals: str = Field(..., description=\"Short-term career goals\")\n    long_term_goals: str = Field(..., description=\"Long-term career goals\")\n    industries_of_interest: str = Field(..., description=\"Industries of interest\")\n    target_roles: str = Field(..., description=\"Target job roles/positions\")\nclass PFAnalyzerResponse(BaseModel):",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "PFAnalyzerResponse",
         "kind": 6,
-        "importPath": "models",
-        "description": "models",
+        "importPath": "src.models",
+        "description": "src.models",
         "peekOfCode": "class PFAnalyzerResponse(BaseModel):\n    \"\"\"Response model for PF Analyzer\"\"\"\n    feedback: str = Field(..., description=\"Personalized feedback and recommendations\")\n    timestamp: str = Field(..., description=\"Timestamp of the analysis\")",
-        "detail": "models",
+        "detail": "src.models",
         "documentation": {}
     },
     {
         "label": "create_analysis_request",
         "kind": 2,
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "peekOfCode": "def create_analysis_request(student_data: dict) -> str:\n    \"\"\"\n    Combines the system prompt with student data for AI analysis\n    Args:\n        student_data: Dictionary containing student profile information\n    Returns:\n        Complete prompt string for AI model\n    \"\"\"\n    import json\n    user_prompt = f\"\"\"",
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "MCQ_GENERATION_PROMPT",
         "kind": 5,
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "peekOfCode": "MCQ_GENERATION_PROMPT = \"\"\"You are an expert educational content creator specializing in generating high-quality, pedagogically sound multiple-choice questions.\nYour task is to create a single MCQ based on the following parameters:\n- Course: {course}\n- Topic: {topic}\n- Difficulty Level: {difficulty}/5 (where 1 is beginner and 5 is expert)\nDIFFICULTY GUIDELINES:\n- Level 1 (Beginner): Basic definitions, simple recall, fundamental concepts. Direct questions with obvious incorrect options.\n- Level 2 (Elementary): Understanding basic relationships, simple application of concepts. Some plausible distractors.\n- Level 3 (Intermediate): Application of knowledge, analysis of scenarios, connecting multiple concepts. Moderately challenging distractors.\n- Level 4 (Advanced): Complex problem-solving, evaluation, synthesis of multiple concepts. Subtle differences between options.",
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "FEEDBACK_PROMPT",
         "kind": 5,
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "peekOfCode": "FEEDBACK_PROMPT = \"\"\"You are an encouraging and knowledgeable tutor providing feedback on quiz answers.\nThe student answered a question about {course} - {topic}.\nQuestion: {question}\nStudent's Answer: {user_answer}\nCorrect Answer: {correct_answer}\nExplanation: {explanation}\nYour task:\n1. If the answer is CORRECT:\n   - Give a brief, enthusiastic congratulatory message (1-2 sentences)\n   - Mention the specific concept they demonstrated understanding of",
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     },
     {
         "label": "PF_ANALYZER_SYSTEM_PROMPT",
         "kind": 5,
-        "importPath": "prompts",
-        "description": "prompts",
+        "importPath": "src.prompts",
+        "description": "src.prompts",
         "peekOfCode": "PF_ANALYZER_SYSTEM_PROMPT = \"\"\"You are an expert educational advisor and career counselor AI with deep expertise in academic assessment, skill development, and career planning. Your role is to analyze student profiles comprehensively and provide actionable, personalized guidance.\n## YOUR ANALYSIS FRAMEWORK\nYou will receive student data in the following format:\n### STUDENT PROFILE STRUCTURE:\n```\n{\n    \"cgpa\": float,  # Out of 4.0\n    \"major\": str,\n    \"short_term_goals\": str,  # 1-2 years\n    \"long_term_goals\": str,   # 5+ years",
-        "detail": "prompts",
+        "detail": "src.prompts",
         "documentation": {}
     }
 ]

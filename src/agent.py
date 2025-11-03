@@ -7,7 +7,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
 from langchain_groq import ChatGroq
-from prompts import MCQ_GENERATION_PROMPT, FEEDBACK_PROMPT
+from src.prompts import MCQ_GENERATION_PROMPT, FEEDBACK_PROMPT
 from pydantic import BaseModel, Field
 
 from dotenv import load_dotenv
@@ -171,7 +171,7 @@ def process_answer_node(state: QuizState) -> QuizState:
 
     return state
 
-from prompts import create_analysis_request, PF_ANALYZER_SYSTEM_PROMPT
+from src.prompts import create_analysis_request, PF_ANALYZER_SYSTEM_PROMPT
 
 class StudentProfile(BaseModel):
     cgpa: float = Field(..., description="Cumulative Grade Point Average")
