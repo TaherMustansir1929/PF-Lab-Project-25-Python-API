@@ -2,7 +2,6 @@ from typing import Literal, TypedDict
 import json
 import re
 
-from langchain.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_anthropic import ChatAnthropic
@@ -68,11 +67,11 @@ def generate_mcq_node(state: QuizState) -> QuizState:
         history=state.get("current_mcq", "No previous questions."),
     )
     messages = [SystemMessage(content=prompt)]
-    chain = ChatPromptTemplate.from_messages(messages) | llm
+    # chain = ChatPromptTemplate.from_messages(messages) | llm
 
     response_text = ""
     try:
-        response = chain.invoke({})
+        response = llm.invoke(messages)
 
         # Get the response content as string
         response_text = str(response.content).strip()

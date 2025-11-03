@@ -400,14 +400,6 @@
         "documentation": {}
     },
     {
-        "label": "ChatPromptTemplate",
-        "importPath": "langchain.prompts",
-        "description": "langchain.prompts",
-        "isExtraImport": true,
-        "detail": "langchain.prompts",
-        "documentation": {}
-    },
-    {
         "label": "HumanMessage",
         "importPath": "langchain_core.messages",
         "description": "langchain_core.messages",
@@ -1012,7 +1004,7 @@
         "kind": 2,
         "importPath": "src.agent",
         "description": "src.agent",
-        "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [SystemMessage(content=prompt)]\n    chain = ChatPromptTemplate.from_messages(messages) | llm",
+        "peekOfCode": "def generate_mcq_node(state: QuizState) -> QuizState:\n    \"\"\"Initializes a new quiz session\"\"\"\n    prompt = MCQ_GENERATION_PROMPT.format(\n        course=state[\"course\"],\n        topic=state[\"topic\"],\n        difficulty=state[\"difficulty\"],\n        history=state.get(\"current_mcq\", \"No previous questions.\"),\n    )\n    messages = [SystemMessage(content=prompt)]\n    # chain = ChatPromptTemplate.from_messages(messages) | llm",
         "detail": "src.agent",
         "documentation": {}
     },
