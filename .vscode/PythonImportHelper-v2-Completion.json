@@ -44,6 +44,14 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "importPath": "src.app",
+        "description": "src.app",
+        "isExtraImport": true,
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
